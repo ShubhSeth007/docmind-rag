@@ -12,8 +12,11 @@ sentence-transformers==2.7.0
 torch==2.2.2
 transformers==4.40.0
 
-# Vector store
-chromadb==0.5.0
+# Vector store — pinned to version compatible with numpy <2.0
+chromadb==0.4.24
+
+# NumPy pinned below 2.0 (chromadb 0.4.x uses np.float_ which was removed in 2.0)
+numpy==1.26.4
 
 # LLM
 groq==0.5.0
