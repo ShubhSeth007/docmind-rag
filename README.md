@@ -4,7 +4,7 @@ A production-grade Retrieval-Augmented Generation (RAG) pipeline that lets you u
 
 Built with **sentence-transformers** embeddings, **ChromaDB** vector search, **cross-encoder reranking**, and **Groq LLM** (llama-3.3-70b). Containerized with Docker and deployed live on Render.
 
-🔴 **Live:** [https://YOUR-SERVICE.onrender.com](https://YOUR-SERVICE.onrender.com)
+🔴 **Live:** [https://YOUR-SERVICE.onrender.com](https://docmind-rag-pmsv.onrender.com)
 
 ---
 
