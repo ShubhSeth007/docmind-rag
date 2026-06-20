@@ -20,6 +20,7 @@ RUN python download_models.py
 
 COPY app.py .
 COPY rag_engine.py .
+COPY index.html .
 
 RUN mkdir -p /app/chroma_store
 
