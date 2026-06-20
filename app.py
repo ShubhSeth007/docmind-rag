@@ -10,7 +10,7 @@ import logging
 from pathlib import Path
 
 from fastapi import FastAPI, UploadFile, File, HTTPException, BackgroundTasks
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from pydantic import BaseModel, Field
 from prometheus_client import Counter, Histogram, Gauge, generate_latest, CONTENT_TYPE_LATEST
 from starlette.responses import Response
@@ -103,7 +103,9 @@ Question: {question}
 
 Answer:"""
 
-
+@app.get("/")
+def serve_ui():
+    return FileResponse("index.html")
 # ── Endpoints ──────────────────────────────────────────────────────────────────
 @app.get("/health")
 def health():
